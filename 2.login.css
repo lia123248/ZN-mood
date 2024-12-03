@@ -1,0 +1,259 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: snooth;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  :root {
+    --text-color: #fff;
+    --bg-color: #000;
+    --main-color: #333;
+  
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+  }
+  
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    background-color:var(--main-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color);  
+}
+
+.logo span {
+    color: #7BD3EA;
+  }
+
+.navbar {
+    display: flex;
+  }
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin: 10px 10px;
+}
+
+.navbar a:hover {
+    color: #7BD3EA;
+}
+
+.h-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.h-right a:first-child {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.h-right a {
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.h-right a:hover {
+    color: #7BD3EA;
+  }
+  
+.section {
+    padding: 70px 17% 60px;
+  }
+
+
+/* Hero Section Styles */
+.home {
+    background-image: url('Gambar\ WhatsApp\ 2024-11-28\ pukul\ 13.32.19_f31ac7cd.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-content {
+    max-width: 800px;
+    padding: 40px;
+}
+
+.home h5 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+}
+
+/* Styles for the login form */
+.login-container {
+  position: absolute; /* Posisi absolut untuk menempatkan kontainer */
+  top: 60%; /* Jarak dari atas halaman */
+  left: 30%; /* Jarak dari kiri halaman */
+  transform: translate(-50%, -50%); /* Memusatkan kontainer */
+  padding: 40px; /* Ruang di dalam kontainer */
+  border-radius: 10px; /* Sudut bulat pada kontainer */
+  text-align: center; /* Teks di dalam kontainer rata tengah */
+  width: 300px; /* Lebar kontainer */
+}
+
+/* Gaya untuk form login di dalam kontainer */
+.login-form {
+  background: rgba(64, 64, 64, 0.15); /* Latar belakang transparan */
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Border dengan transparansi */
+  padding: 40px; /* Ruang di dalam form */
+  border-radius: 16px; /* Sudut bulat pada form */
+  backdrop-filter: blur(25px); /* Efek blur di belakang form */
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15); /* Bayangan pada form */
+  width: 300px; /* Lebar form */
+  color: black; /* Warna teks dalam form */
+}
+
+/* Gaya untuk gambar di dalam kontainer */
+.login-container img {
+  margin-bottom: 1rem; /* Jarak bawah gambar */
+  width: 80px; /* Atur lebar gambar sesuai kebutuhan */
+  height: auto; /* Memastikan proporsi gambar tetap terjaga */
+  display: block; /* Menampilkan gambar sebagai blok */
+  margin: 0 auto 1rem; /* Memusatkan gambar */
+}
+
+/* Gaya untuk judul di dalam kontainer */
+.login-container h2 {
+  text-align: center; /* Rata tengah untuk judul */
+  margin-bottom: 5px; /* Jarak bawah judul */
+  font-weight: 10px; /* Ketebalan font (disarankan: gunakan nilai seperti normal, bold, dll.) */
+}
+
+/* Gaya untuk paragraf di dalam kontainer */
+.login-container p {
+  margin-bottom: 15px; /* Jarak bawah paragraf */
+  font-weight: normal; /* Ketebalan font normal */
+  font-size: 10px; /* Ukuran font untuk paragraf */
+}
+
+/* Container untuk tombol sosial */
+.social-buttons {
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: space-between; /* Menyebarkan tombol secara merata */
+  margin-bottom: 1rem; /* Jarak bawah untuk container tombol sosial */
+}
+
+/* Gaya untuk tombol sosial */
+.social-buttons button {
+  flex: 1; /* Membuat tombol mengambil ruang yang tersedia */
+  margin: 0 5px; /* Jarak horizontal antara tombol */
+  padding: 10px; /* Ruang di dalam tombol */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Sudut bulat pada tombol */
+  cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+/* Gaya untuk input di dalam kontainer */
+.login-container input {
+  width: 100%; /* Lebar input 100% dari kontainer */
+  padding: 10px; /* Ruang di dalam input */
+  margin-bottom: 20px; /* Jarak bawah input */
+  border: 1px solid #ccc; /* Border dengan warna abu-abu */
+  border-radius: 6px; /* Sudut bulat pada input */
+}
+
+/* Gaya untuk tombol "Continue" */
+.login-container .continue-button {
+  width: 100%; /* Lebar tombol 100% dari kontainer */
+  background-color: #094362; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 10px; /* Ruang di dalam tombol */
+  border: none; /* Menghilangkan border default */
+  border-radius: 6px; /* Sudut bulat pada tombol */
+  cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+
+/* Gaya untuk pemisah antara elemen */
+.separator {
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  align-items: center; /* Menjaga elemen tetap terpusat secara vertikal */
+  justify-content: center; /* Menjaga elemen tetap terpusat secara horizontal */
+  margin: 1rem 0; /* Jarak atas dan bawah pemisah */
+}
+
+/* Gaya untuk garis pemisah */
+.line {
+  flex: 1; /* Garis akan mengambil sisa ruang */
+  height: 1px; /* Tinggi garis */
+  background-color: #000000; /* Warna garis */
+  margin: 0 10px; /* Spasi antara garis dan tulisan */
+}
+
+/* Gaya untuk link pendaftaran */
+.login-container .signup {
+  margin-top: 1rem; /* Jarak atas untuk bagian pendaftaran */
+}
+
+/* Gaya untuk link pendaftaran */
+.login-container .signup a {
+  color: #007bff; /* Warna link pendaftaran */
+}
